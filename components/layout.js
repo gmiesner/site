@@ -1,10 +1,11 @@
 import {
-  useColorMode,
-  IconButton,
+  BaseStyles,
   Box,
   Container,
   Flex,
-  NavLink
+  IconButton,
+  NavLink,
+  useColorMode
 } from 'theme-ui'
 import Link from 'next/link'
 import Icon from './icon'
@@ -133,7 +134,9 @@ export const Rainbow = () => (
 const Layout = props => (
   <>
     <Header />
-    <Container variant="copy">{props.children}</Container>
+    <Container as={BaseStyles} variant="copy">
+      {props.children}
+    </Container>
     <Footer />
     <Rainbow />
   </>

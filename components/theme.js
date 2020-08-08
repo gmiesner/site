@@ -32,7 +32,7 @@ const theme = {
     elevated: palette.light,
     elevatedText: palette.indigo,
     primary: palette.fuschia,
-    secondary: palette.lilac,
+    secondary: palette.pink,
     muted: palette.lilac,
     accent: palette.yellow,
     modes: {
