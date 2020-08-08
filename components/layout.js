@@ -94,11 +94,7 @@ export const Footer = () => (
     >
       <Icon glyph="twitter" size={36} />
     </NavLink>
-    <NavLink
-      href="https://github.com/lachlanjc"
-      title="GitHub"
-      target="_blank"
-    >
+    <NavLink href="https://github.com/lachlanjc" title="GitHub" target="_blank">
       <Icon glyph="github" size={36} />
     </NavLink>
     <NavLink
@@ -108,10 +104,7 @@ export const Footer = () => (
     >
       <Icon glyph="instagram" size={36} />
     </NavLink>
-    <NavLink
-      href="mailto:lachlan@hackclub.com"
-      title="Email"
-    >
+    <NavLink href="mailto:lachlan@hackclub.com" title="Email">
       <Icon glyph="email" size={36} />
     </NavLink>
   </Container>
@@ -132,20 +125,12 @@ export const Rainbow = () => (
       width: '100%',
       height: '4rem',
       display: 'block',
-      backgroundImage: `linear-gradient(${colors.red} 0%, ${
-        colors.red
-      } 16.6666%, ${colors.orange} 16.6666%, ${colors.orange} 33.333%, ${
-        colors.yellow
-      } 33.333%, ${colors.yellow} 50%, ${colors.green} 50%, ${
-        colors.green
-      } 66.6666%, ${colors.blue} 66.6666%, ${
-        colors.blue
-      } 83.3333%, #8067C3 83.3333%, #8067C3 100%)`
+      backgroundImage: `linear-gradient(${colors.red} 0%, ${colors.red} 16.6666%, ${colors.orange} 16.6666%, ${colors.orange} 33.333%, ${colors.yellow} 33.333%, ${colors.yellow} 50%, ${colors.green} 50%, ${colors.green} 66.6666%, ${colors.blue} 66.6666%, ${colors.blue} 83.3333%, #8067C3 83.3333%, #8067C3 100%)`
     }}
   />
 )
 
-export default props => (
+const Layout = props => (
   <>
     <Header />
     <Container variant="copy">{props.children}</Container>
@@ -153,3 +138,5 @@ export default props => (
     <Rainbow />
   </>
 )
+
+export default Layout

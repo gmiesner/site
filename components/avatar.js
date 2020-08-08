@@ -1,9 +1,11 @@
 import { Avatar } from 'theme-ui'
 
-export default props => (
+const Component = props => (
   <Avatar
     {...props}
     src="https://cdn.glitch.com/4d99d0f7-c364-44a5-b1b9-2c3c3f5cb333%2FIMG_2040-2.jpeg?v=1565688136581"
     alt="Lachlan's avatar"
   />
 )
+
+export default Component
