@@ -70,7 +70,7 @@ const Banner = ({ children }) => (
             transition: 'all .125s ease-in-out',
             textShadow: 'none',
             ':hover': {
-              bg: 'blue',
+              bg: 'lilac',
               transform: 'scale(1.25) rotate(-356deg)'
             }
           }}
@@ -89,11 +89,11 @@ const Banner = ({ children }) => (
             a: { fontWeight: 'bold' }
           }}
         >
-          I’m a web designer-developer,
+          I’m a web designer-developer.
           <br />
-          head of storytelling @{' '}
+          Head of storytelling @{' '}
           <a href="https://hackclub.com/">Hack&nbsp;Club</a>,
-          <br />& NYU&nbsp;’23, studying Interactive Media&nbsp;Arts.
+          <br />& NYU&nbsp;<s>’23</s>??, studying Interactive Media&nbsp;Arts.
         </Text>
         {children}
       </Slide>
