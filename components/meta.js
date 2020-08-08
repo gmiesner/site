@@ -13,7 +13,7 @@ const Meta = ({
   <Head>
     <meta key="og_type" property="og:type" content="website" />
     <meta key="og_site" property="og:site_name" content={name} />
-    <meta key="og_url" property="og:url" content="https://lachlanjc.me/" />
+    <meta key="og_url" property="og:url" content="https://lachlanjc.com/" />
     <meta key="tw_site" name="twitter:site" content="@lachlanjc" />
 
     <title>{makeTitle(title, name)}</title>
