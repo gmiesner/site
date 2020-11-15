@@ -10,15 +10,15 @@
     "start": "next"
   },
   "dependencies": {
-    "@hackclub/icons": "^0.0.3",
-    "@hackclub/theme": "^0.3.0",
-    "@mdx-js/loader": "^1.6.16",
-    "@next/mdx": "^9.5.1",
-    "lodash": "^4.17.19",
-    "next": "^9.5.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "@hackclub/icons": "^0.0.5",
+    "@hackclub/theme": "^0.3.1",
+    "@mdx-js/loader": "^1.6.21",
+    "@next/mdx": "^10.0.1",
+    "lodash": "^4.17.20",
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-reveal": "^1.2.2",
-    "theme-ui": "^0.3.1"
+    "theme-ui": "^0.3.3"
   }
 }
