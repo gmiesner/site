@@ -12,13 +12,13 @@
   "dependencies": {
     "@hackclub/icons": "^0.0.5",
     "@hackclub/theme": "^0.3.1",
-    "@mdx-js/loader": "^1.6.21",
+    "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.3",
     "lodash": "^4.17.20",
     "next": "^10.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-reveal": "^1.2.2",
-    "theme-ui": "^0.3.4"
+    "theme-ui": "^0.6.0-alpha.3"
   }
 }

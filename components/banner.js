@@ -79,6 +79,7 @@ const Banner = ({ children }) => (
         </Badge>
 
         <Text
+          as="p"
           variant="headline"
           sx={{
             mt: [3, 4, 5],
