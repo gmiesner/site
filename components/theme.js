@@ -58,4 +58,17 @@ const theme = {
   }
 }
 
+theme.cards.interactive = {
+  variant: 'cards.primary',
+  textDecoration: 'none',
+  WebkitTapHighlightColor: 'transparent',
+  '@media (hover: hover)': {
+    transition: 'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+    ':hover,:focus': {
+      transform: 'scale(1.0625)',
+      boxShadow: 'elevated'
+    }
+  }
+}
+
 export default theme
