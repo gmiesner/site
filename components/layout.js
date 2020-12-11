@@ -50,7 +50,7 @@ export const Header = () => (
       display: 'flex',
       alignItems: 'center',
       px: 3,
-      py: 4,
+      py: [3, 4],
       'a + a': { mx: [3, 4] }
     }}
   >

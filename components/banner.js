@@ -10,7 +10,8 @@ const Banner = ({ children }) => (
       justifyContent: 'center',
       color: 'white',
       minHeight: '100vh',
-      py: [5, 6]
+      py: [5, 6],
+      mb: 0
     }}
   >
     <BGImg
