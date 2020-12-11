@@ -2,7 +2,6 @@ import {
   BaseStyles,
   Box,
   Container,
-  Flex,
   IconButton,
   NavLink,
   useColorMode
@@ -52,20 +51,16 @@ export const Header = () => (
       alignItems: 'center',
       px: 3,
       py: 4,
-      'a + a': { mx: [2, 3] }
+      'a + a': { mx: [3, 4] }
     }}
   >
-    <Avatar size={48} sx={{ mr: 3 }} />
-    <Link href="/" passHref>
-      <NavLink>@lachlanjc</NavLink>
-    </Link>
-    <Box sx={{ mx: 'auto' }} />
+    <NavLink href="https://notebook.lachlanjc.com" target="_blank">
+      Notebook
+    </NavLink>
     <Link href="/resume" passHref>
       <NavLink>Résumé</NavLink>
     </Link>
-    <NavLink href="https://notebook.lachlanjc.me" target="_blank">
-      Notebook
-    </NavLink>
+    <Box sx={{ mx: 'auto' }} />
     <ColorButton
       onClick={e => {
         const next = mode === 'dark' ? 'light' : 'dark'
@@ -105,7 +100,7 @@ export const Footer = () => (
     >
       <Icon glyph="instagram" size={36} />
     </NavLink>
-    <NavLink href="mailto:lachlan@hackclub.com" title="Email">
+    <NavLink href="mailto:lachlanjc@hey.com" title="Email">
       <Icon glyph="email" size={36} />
     </NavLink>
   </Container>

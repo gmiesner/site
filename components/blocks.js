@@ -1,4 +1,5 @@
-import { Box } from 'theme-ui'
+import { Box, Card } from 'theme-ui'
+import Image from 'next/image'
 
 export const Container = ({ wide, ...props }) => (
   <Box
@@ -12,52 +13,56 @@ export const Container = ({ wide, ...props }) => (
 
 export const Tiles = props => (
   <Box
+    as="section"
     {...props}
     sx={{
-      ul: {
-        listStyle: 'none',
-        p: 0,
-        m: 0,
-        display: 'grid',
-        gridGap: [3, 4],
-        gridTemplateColumns: [null, 'repeat(auto-fit, minmax(384px, 1fr))']
-      },
-      li: {
-        variant: 'cards.interactive',
-        bg: 'elevated',
-        color: 'elevatedText',
-        a: {
-          display: 'block'
-        },
-        '> a:first-of-type': {
-          display: 'block',
-          m: [-3, -4],
-          mb: [2, 3, 4]
-        }
-      },
-      h2: {
-        fontSize: [2, 3],
-        mb: 1,
-        lineHeight: 'heading',
-        a: {
-          color: 'inherit',
-          textDecoration: 'none'
-        }
-      },
-      p: {
-        my: 0
-      },
-      img: {
-        display: 'block',
-        width: '100%',
-        maxWidth: '100%',
-        maxHeight: 284,
-        objectFit: 'cover',
-        objectPosition: 'center'
-      },
+      display: 'grid',
+      gridGap: [3, 4],
+      gridTemplateColumns: [null, 'repeat(2, 1fr)'],
+      mx: [-3, null, -4],
       ...props.sx
     }}
   />
+)
+
+export const Tile = ({ href, id, alt, children }) => (
+  <Card
+    variant="interactive"
+    as="a"
+    href={href}
+    id={id}
+    sx={{
+      bg: 'elevated',
+      color: 'elevatedText',
+      borderRadius: [0, 'extra'],
+      p: [0, 0]
+    }}>
+    <Image
+      src={`/projects/${id}.jpg`}
+      width={2048}
+      height={1024}
+      alt={alt}
+    />
+    <Box
+      sx={{
+        p: [3, null, 4],
+        h2: {
+          pb: 2,
+          my: 0,
+          fontSize: [2, 3],
+          lineHeight: 'heading',
+          a: {
+            color: 'inherit',
+            textDecoration: 'none'
+          }
+        },
+        '> p': {
+          my: 0,
+        }
+      }}>
+      {children}
+    </Box>
+  </Card>
 )
 
 export const List = props => (

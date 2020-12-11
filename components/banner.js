@@ -1,5 +1,6 @@
 import { Flex, Container, Heading, Badge, Text } from 'theme-ui'
-import Slide from 'react-reveal/Slide'
+import BGImg from './bg-img'
+import Slide from './slide-up'
 
 const Banner = ({ children }) => (
   <Flex
@@ -8,14 +9,16 @@ const Banner = ({ children }) => (
       flexDirection: 'column',
       justifyContent: 'center',
       color: 'white',
-      backgroundImage:
-        'url(https://cdn.glitch.com/4d99d0f7-c364-44a5-b1b9-2c3c3f5cb333%2F_DSC1474.jpeg?v=1582521162110)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
       minHeight: '100vh',
       py: [5, 6]
     }}
   >
+    <BGImg
+      src="https://cdn.glitch.com/4d99d0f7-c364-44a5-b1b9-2c3c3f5cb333%2F_DSC1474.jpeg?v=1582521162110"
+      width={1520}
+      height={1016}
+      alt="Close-up of Lachlan's face with lipstick on & satin red gloved hands covering the eyes"
+    />
     <Container
       variant="copyPlus"
       sx={{
@@ -45,7 +48,7 @@ const Banner = ({ children }) => (
         }
       }}
     >
-      <Slide bottom>
+      <Slide>
         <Heading
           as="h1"
           sx={{
@@ -59,7 +62,6 @@ const Banner = ({ children }) => (
           <br />
           Lachlan Campbell.
         </Heading>
-
         <Badge
           variant="pill"
           sx={{
@@ -77,24 +79,20 @@ const Banner = ({ children }) => (
         >
           they/them
         </Badge>
-
         <Text
           as="p"
           variant="headline"
           sx={{
             mt: [3, 4, 5],
             mb: [4, 5],
-            lineHeight: 'caption',
+            lineHeight: 'body',
             fontSize: [3, 4],
             fontWeight: 'normal',
             a: { fontWeight: 'bold' }
           }}
         >
-          I’m a web designer-developer.
-          <br />
-          Head of storytelling @{' '}
-          <a href="https://hackclub.com/">Hack&nbsp;Club</a>,
-          <br />& NYU&nbsp;<s>’23</s>??, studying Interactive Media&nbsp;Arts.
+          I’m a web designer-developer & hacktivist.
+          <br />NYU&nbsp;’24, studying Interactive Media&nbsp;Arts.
         </Text>
         {children}
       </Slide>

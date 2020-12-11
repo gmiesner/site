@@ -1,44 +1,65 @@
 import Banner from '../components/banner'
-import { Tiles, List } from '../components/blocks'
+import { Tiles, Tile, List } from '../components/blocks'
 import { Header, Footer, Rainbow } from '../components/layout'
 import { Container } from 'theme-ui'
 
 <Banner>
 
-- [Twitter](https://twitter.com/lachlanjc)
-- [GitHub](https://github.com/lachlanjc)
-- [Instagram](https://instagram.com/lachlan.jc)
-- [Email](mailto:lachlanjc@hey.com)
+<Footer />
 
 </Banner>
 
 <Header />
 
-<Container variant="container">
+<Container variant="container" sx={{ '> h2': { variant: 'styles.h2', mb: [2, 3] } }}>
 
-## Projects I’m proud of
+## Work I’m proud of
 
 <Tiles sx={{ mb: [4, 5] }}>
+<Tile
+  href="https://hackclub.com/bank/"
+  id="bank"
+    alt="Banner of hackathon with Hack Club Bank logo"
+>
 
-- [![Predict COVID banner](https://predictcovid.com/card.png)][predict covid]
-  ## [Predict COVID-19][predict covid]
-  Made an interactive data visualization for predicting COVID-19 country-by-country.
-- [![Gun Funded logo](https://cdn.glitch.com/00f3a6a0-e06b-437a-9b4f-558bc4fa01b1%2Fcard.png?v=1576435737382)][gun funded]
-  ## [Gun Funded][]
-  Made a website visualizing the gun lobby’s funding of U.S. Congress.
-- [![Hack Penn banner](https://nyu.lachlanjc.me/projects/hackpenn.png)][hack pennsylvania]
-  ## [Hack Pennsylvania][]
-  Founded & led Pennsylvania’s largest-ever high school hackathon, January 2019. 111 students.
-- [![Hack Club Bank banner](https://cloud-jjiw4lhcn.vercel.app/2020-08-08_edbp3wzddj5rn9nvz5vuqjzm4dezyvr8.jpeg)][hack club bank]
-  ## [Hack Club Bank][]
-  Designed the app & website for the first bank made for hackathons. 2M USD transacted & counting.
+## Hack Club Bank
 
-[predict covid]: https://predictcovid.com
-[gun funded]: https://gunfunded.com
-[hack club]: https://hackclub.com/
-[hack club bank]: https://hackclub.com/bank/
-[hack pennsylvania]: https://hackpenn.com
+Designed the app & website for the first bank made for high school hackers. $2M transacted & counting.
 
+</Tile>
+<Tile
+  href="https://hackclub.com/"
+  id="hackclub"
+  alt="Hack Club students having fun with Hack Club logo overlaid"
+>
+
+## Hack Club
+
+3 years as Head of Storytelling for Hack Club, a global nonprofit network of high school hackers. Made hackclub.com.
+
+</Tile>
+<Tile
+  href="https://gunfunded.com"
+  id="gunfunded"
+  alt="US Capitol building with Gun Funded site overlaid"
+>
+
+## Gun Funded
+
+Made a website visualizing the gun lobby’s $40M+ funding of U.S.&nbsp;Congress, December 2019. Open source.
+
+</Tile>
+<Tile
+  href="https://hackpenn.com"
+  id="hackpenn"
+  alt="Lachlan presenting to crowd at Hack Pennsylvania"
+>
+
+## Hack Pennsylvania
+
+Founded & led Pennsylvania’s largest-ever high school hackathon, January 2019. 111 students.
+
+</Tile>
 </Tiles>
 
 ## 2020 at Hack Club
