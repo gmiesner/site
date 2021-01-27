@@ -10,6 +10,8 @@ const Banner = ({ children }) => (
       justifyContent: 'center',
       color: 'white',
       minHeight: '100vh',
+      maxHeight: '768px',
+      overflowY: 'visible',
       py: [5, 6],
       mb: 0
     }}

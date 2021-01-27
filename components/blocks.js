@@ -57,6 +57,7 @@ export const Tile = ({ href, id, alt, children }) => (
           }
         },
         '> p': {
+          color: 'inherit',
           my: 0,
         }
       }}>
@@ -78,6 +79,7 @@ export const List = props => (
         gridGap: [3, 4]
       },
       a: {
+        display: 'block',
         fontWeight: 'bold',
         color: 'accent',
         textDecoration: 'none',

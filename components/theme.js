@@ -18,9 +18,9 @@ export const palette = {
   light: '#ffeaeb',
   indigo: '#3b47a8',
   purple: '#8057c5',
-  twitter: '#1da1f2',
-  facebook: '#3b5998',
-  instagram: '#e1306c'
+  // twitter: '#1da1f2',
+  // facebook: '#3b5998',
+  // instagram: '#e1306c'
 }
 
 const theme = {

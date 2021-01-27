@@ -77,7 +77,7 @@ export const Footer = () => (
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      py: 5,
+      py: [3, 4, 5],
       a: { color: 'primary', mx: 2 }
     }}
   >
@@ -86,7 +86,6 @@ export const Footer = () => (
       href="https://twitter.com/lachlanjc"
       title="Twitter"
       target="_blank"
-      variant="styles.NavLink"
     >
       <Icon glyph="twitter" size={36} />
     </NavLink>
