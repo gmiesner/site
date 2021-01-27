@@ -1,7 +1,7 @@
 import Banner from '../components/banner'
 import { Tiles, Tile, List } from '../components/blocks'
 import { Header, Footer, Rainbow } from '../components/layout'
-import { Container } from 'theme-ui'
+import { Container, Button } from 'theme-ui'
 
 <Banner>
 
@@ -19,7 +19,7 @@ import { Container } from 'theme-ui'
 <Tile
   href="https://hackclub.com/bank/"
   id="bank"
-    alt="Banner of hackathon with Hack Club Bank logo"
+  alt="Banner of hackathon with Hack Club Bank logo"
 >
 
 ## Hack Club Bank
@@ -60,13 +60,20 @@ Made a website visualizing the gun lobby’s $40M+ funding of U.S.&nbsp;Congress
 Founded & led Pennsylvania’s largest-ever high school hackathon, January 2019. 111 students.
 
 </Tile>
+<Button
+  as="a"
+  href="https://2020-sites.lachlanjc.com"
+  sx={{ gridColumn: [null, 'span 2'], mx: 'auto', fontSize: 2 }}
+>
+  Check out my recent sites →
+</Button>
 </Tiles>
 
 ## 2020 at Hack Club
 
 <List sx={{ mb: [4, 5] }}>
 
-- [Summer Scrapbook _A daily diary of what Hack Clubbers are learning & making every day_](https://scrapbook.hackclub.com/)
+- [Scrapbook _A daily diary of what Hack Clubbers are learning & making every day_](https://scrapbook.hackclub.com/)
 - [COVID Global Hackathon _Website for the world’s largest hackathon,
   Facebook x Hack&nbsp;Club_](https://covidglobalhackathon.com/)
 - [Hackathons _Worldwide, up-to-date directory of high school hackathons_](https://hackathons.hackclub.com/)
@@ -78,7 +85,9 @@ Founded & led Pennsylvania’s largest-ever high school hackathon, January 2019.
 
 <List sx={{ mb: [4, 5] }}>
 
+- [2019 _Year in review: story, activity, music_](https://2019.lachlanjc.com)
 - [Theme UI _CSS-in-JS for themable design_](https://theme-ui.com)
+- [Theme UI Preset Geist _Preset for Theme UI for Geist UI_](https://theme-ui-preset-geist.vercel.app)
 - [notebook _Personal notes/blog_](https://notebook.lachlanjc.com)
 - [COVID-19 Testing Gap _Visualization of COVID testing_](https://github.com/lachlanjc/covidtesting)
 - [Predict COVID-19 _First production RedwoodJS app_](https://github.com/lachlanjc/covid19)

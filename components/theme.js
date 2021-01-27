@@ -57,6 +57,7 @@ const theme = {
     monospace: 'Menlo, monospace'
   }
 }
+theme.styles.root.overflowX = 'hidden'
 
 theme.cards.interactive = {
   variant: 'cards.primary',

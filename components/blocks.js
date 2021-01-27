@@ -17,9 +17,9 @@ export const Tiles = props => (
     {...props}
     sx={{
       display: 'grid',
-      gridGap: [3, 4],
+      gridGap: [3, null, 4],
       gridTemplateColumns: [null, 'repeat(2, 1fr)'],
-      mx: [-3, null, -4],
+      mx: [-3, 0, -4],
       ...props.sx
     }}
   />

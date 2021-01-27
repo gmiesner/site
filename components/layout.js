@@ -45,7 +45,7 @@ export const ColorButton = ({ sx, ...props }) => {
 
 export const Header = () => (
   <Container
-    as="header"
+    as="nav"
     sx={{
       display: 'flex',
       alignItems: 'center',

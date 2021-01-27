@@ -24,6 +24,7 @@ const gx = gradient =>
 
 const BGImg = ({ gradient, ...props }) => (
   <Box
+    as="figure"
     sx={{
       position: 'absolute',
       display: 'block',
