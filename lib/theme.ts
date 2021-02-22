@@ -41,14 +41,14 @@ export const palette = {
   yellow: '#ffaf26',
   light: '#ffeaeb',
   indigo: '#3b47a8',
-  purple: '#8057c5'
+  purple: '#8057c5',
   // twitter: '#1da1f2',
   // facebook: '#3b5998',
   // instagram: '#e1306c'
 }
 
 const theme: Theme = {
-  breakpoints: [32, 48, 64, 96, 128].map(w => `${w}em`),
+  breakpoints: [32, 48, 64, 96, 128].map((w) => `${w}em`),
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fontSizes: [12, 16, 20, 24, 32, 48, 64, 96, 128, 160, 192],
   initialColorModeName: 'light',
@@ -72,9 +72,9 @@ const theme: Theme = {
         primary: palette.fuschia,
         secondary: palette.pink,
         accent: palette.yellow,
-        muted: palette.muted
-      }
-    }
+        muted: palette.muted,
+      },
+    },
   },
   fonts: {
     display:
@@ -82,7 +82,7 @@ const theme: Theme = {
     body:
       'Whyte, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     heading: 'inherit',
-    monospace: 'ui-monospace, Menlo, monospace'
+    monospace: 'ui-monospace, Menlo, monospace',
   },
   lineHeights: {
     limit: 0.875,
@@ -90,16 +90,16 @@ const theme: Theme = {
     heading: 1.125,
     subheading: 1.25,
     caption: 1.375,
-    body: 1.5
+    body: 1.5,
   },
   fontWeights: {
     body: 400,
     bold: 700,
-    heading: 700
+    heading: 700,
   },
   letterSpacings: {
     title: '-0.009em',
-    headline: '0.009em'
+    headline: '0.009em',
   },
   sizes: {
     widePlus: 2048,
@@ -110,46 +110,47 @@ const theme: Theme = {
     copyPlus: 768,
     copy: 680,
     narrowPlus: 600,
-    narrow: 512
+    narrow: 512,
   },
   radii: {
     small: 4,
     default: 8,
     extra: 12,
     ultra: 16,
-    circle: 99999
+    circle: 99999,
   },
   shadows: {
     text: '0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.125)',
     small: '0 1px 2px rgba(0, 0, 0, 0.0625), 0 2px 4px rgba(0, 0, 0, 0.0625)',
     card: '0 4px 8px rgba(0, 0, 0, 0.125)',
-    elevated: '0 1px 2px rgba(0, 0, 0, 0.0625), 0 8px 12px rgba(0, 0, 0, 0.125)'
+    elevated:
+      '0 1px 2px rgba(0, 0, 0, 0.0625), 0 8px 12px rgba(0, 0, 0, 0.125)',
   },
   text: {
     heading: {
       fontWeight: 'bold',
       lineHeight: 'heading',
       mt: 0,
-      mb: 0
+      mb: 0,
     },
     ultratitle: {
       fontSize: [5, 6, 7],
       lineHeight: 'limit',
       fontWeight: 'bold',
-      letterSpacing: 'title'
+      letterSpacing: 'title',
     },
     title: {
       fontSize: [4, 5, 6],
       fontWeight: 'bold',
       letterSpacing: 'title',
-      lineHeight: 'title'
+      lineHeight: 'title',
     },
     subtitle: {
       mt: 3,
       fontSize: [2, 3],
       fontWeight: 'body',
       letterSpacing: 'headline',
-      lineHeight: 'subheading'
+      lineHeight: 'subheading',
     },
     headline: {
       variant: 'text.heading',
@@ -157,14 +158,14 @@ const theme: Theme = {
       lineHeight: 'heading',
       fontSize: 4,
       mt: 3,
-      mb: 3
+      mb: 3,
     },
     subheadline: {
       variant: 'text.heading',
       letterSpacing: 'headline',
       fontSize: 2,
       mt: 0,
-      mb: 3
+      mb: 3,
     },
     eyebrow: {
       color: 'muted',
@@ -174,41 +175,41 @@ const theme: Theme = {
       lineHeight: 'subheading',
       textTransform: 'uppercase',
       mt: 0,
-      mb: 2
+      mb: 2,
     },
     lead: {
       fontSize: [2, 3],
-      my: [2, 3]
+      my: [2, 3],
     },
     caption: {
       color: 'muted',
       fontWeight: 'medium',
       letterSpacing: 'headline',
-      lineHeight: 'caption'
-    }
+      lineHeight: 'caption',
+    },
   },
   alerts: {
     primary: {
       borderRadius: 'default',
       bg: 'orange',
       color: 'background',
-      fontWeight: 'body'
-    }
+      fontWeight: 'body',
+    },
   },
   badges: {
     pill: {
       borderRadius: 'circle',
       px: 3,
       py: 1,
-      fontSize: 1
+      fontSize: 1,
     },
     outline: {
       variant: 'badges.pill',
       bg: 'transparent',
       border: '1px solid',
       borderColor: 'currentColor',
-      fontWeight: 'body'
-    }
+      fontWeight: 'body',
+    },
   },
   buttons: {
     primary: {
@@ -225,22 +226,22 @@ const theme: Theme = {
       transition: 'transform .125s ease-in-out, box-shadow .125s ease-in-out',
       ':focus,:hover': {
         boxShadow: 'elevated',
-        transform: 'scale(1.0625)'
+        transform: 'scale(1.0625)',
       },
-      svg: { ml: -1, mr: 2 }
+      svg: { ml: -1, mr: 2 },
     },
     lg: {
       variant: 'buttons.primary',
       fontSize: 3,
       lineHeight: 'title',
       px: 4,
-      py: 3
+      py: 3,
     },
     outline: {
       variant: 'buttons.primary',
       bg: 'transparent',
       color: 'primary',
-      border: '2px solid currentColor'
+      border: '2px solid currentColor',
     },
     outlineLg: {
       variant: 'buttons.primary',
@@ -250,8 +251,8 @@ const theme: Theme = {
       lineHeight: 'title',
       fontSize: 3,
       px: 4,
-      py: 3
-    }
+      py: 3,
+    },
   },
   cards: {
     primary: {
@@ -260,12 +261,12 @@ const theme: Theme = {
       p: [3, 4],
       borderRadius: 'extra',
       boxShadow: 'card',
-      overflow: 'hidden'
+      overflow: 'hidden',
     },
     sunken: {
       bg: 'sunken',
       p: [3, 4],
-      borderRadius: 'extra'
+      borderRadius: 'extra',
     },
     interactive: {
       variant: 'cards.primary',
@@ -275,12 +276,12 @@ const theme: Theme = {
         transition: 'transform .125s ease-in-out, box-shadow .125s ease-in-out',
         ':hover,:focus': {
           transform: 'scale(1.0625)',
-          boxShadow: 'elevated'
-        }
-      }
+          boxShadow: 'elevated',
+        },
+      },
     },
     translucent: null,
-    translucentDark: null
+    translucentDark: null,
   },
   forms: {
     input: {
@@ -292,7 +293,7 @@ const theme: Theme = {
       '::-webkit-input-placeholder': { color: 'placeholder' },
       '::-moz-placeholder': { color: 'placeholder' },
       ':-ms-input-placeholder': { color: 'placeholder' },
-      '&[type="search"]::-webkit-search-decoration': { display: 'none' }
+      '&[type="search"]::-webkit-search-decoration': { display: 'none' },
     },
     textarea: { variant: 'forms.input' },
     select: { variant: 'forms.input' },
@@ -302,7 +303,7 @@ const theme: Theme = {
       flexDirection: 'column',
       textAlign: 'left',
       lineHeight: 'caption',
-      fontSize: 2
+      fontSize: 2,
     },
     labelHoriz: {
       color: 'text',
@@ -311,10 +312,10 @@ const theme: Theme = {
       textAlign: 'left',
       lineHeight: 'caption',
       fontSize: 2,
-      svg: { color: 'muted' }
+      svg: { color: 'muted' },
     },
     slider: {
-      color: 'primary'
+      color: 'primary',
     },
     hidden: {
       position: 'absolute',
@@ -322,28 +323,28 @@ const theme: Theme = {
       width: '1px',
       overflow: 'hidden',
       clip: 'rect(1px, 1px, 1px, 1px)',
-      whiteSpace: 'nowrap'
-    }
+      whiteSpace: 'nowrap',
+    },
   },
   layout: {
     container: {
       maxWidth: ['layout', null, 'layoutPlus'],
       width: '100%',
       mx: 'auto',
-      px: 3
+      px: 3,
     },
     wide: {
       variant: 'layout.container',
-      maxWidth: ['layout', null, 'wide']
+      maxWidth: ['layout', null, 'wide'],
     },
     copy: {
       variant: 'layout.container',
-      maxWidth: ['copy', null, 'copyPlus']
+      maxWidth: ['copy', null, 'copyPlus'],
     },
     narrow: {
       variant: 'layout.container',
-      maxWidth: ['narrow', null, 'narrowPlus']
-    }
+      maxWidth: ['narrow', null, 'narrowPlus'],
+    },
   },
   styles: {
     root: {
@@ -356,53 +357,53 @@ const theme: Theme = {
       overflowX: 'hidden',
       textRendering: 'optimizeLegibility',
       WebkitFontSmoothing: 'antialiased',
-      MozOsxFontSmoothing: 'grayscale'
+      MozOsxFontSmoothing: 'grayscale',
     },
     h1: {
       variant: 'text.heading',
-      fontSize: 5
+      fontSize: 5,
     },
     h2: {
       variant: 'text.heading',
-      fontSize: 4
+      fontSize: 4,
     },
     h3: {
       variant: 'text.heading',
-      fontSize: 3
+      fontSize: 3,
     },
     h4: {
       variant: 'text.heading',
-      fontSize: 2
+      fontSize: 2,
     },
     h5: {
       variant: 'text.heading',
-      fontSize: 1
+      fontSize: 1,
     },
     h6: {
       variant: 'text.heading',
-      fontSize: 0
+      fontSize: 0,
     },
     p: {
       color: 'text',
       fontWeight: 'body',
       lineHeight: 'body',
-      my: 3
+      my: 3,
     },
     img: {
-      maxWidth: '100%'
+      maxWidth: '100%',
     },
     hr: {
       border: 0,
       borderBottom: '1px solid',
-      borderColor: 'border'
+      borderColor: 'border',
     },
     a: {
       color: 'primary',
       textDecoration: 'underline',
       textUnderlinePosition: 'under',
       ':focus,:hover': {
-        textDecorationStyle: 'wavy'
-      }
+        textDecorationStyle: 'wavy',
+      },
     },
     pre: {
       fontFamily: 'monospace',
@@ -416,8 +417,8 @@ const theme: Theme = {
         color: 'inherit',
         mx: 0,
         px: 0,
-        ...prism
-      }
+        ...prism,
+      },
     },
     code: {
       fontFamily: 'monospace',
@@ -426,18 +427,18 @@ const theme: Theme = {
       bg: 'sunken',
       borderRadius: 'small',
       mx: 1,
-      px: 1
+      px: 1,
     },
     'p > code, li > code': {
       color: 'purple',
-      fontSize: '0.875em'
+      fontSize: '0.875em',
     },
     'p > a > code, li > a > code': {
       color: 'red',
-      fontSize: '0.875em'
+      fontSize: '0.875em',
     },
     li: {
-      my: 2
+      my: 2,
     },
     table: {
       width: '100%',
@@ -450,19 +451,19 @@ const theme: Theme = {
         pr: '4px',
         pl: 0,
         borderColor: 'border',
-        borderBottomStyle: 'solid'
-      }
+        borderBottomStyle: 'solid',
+      },
     },
     th: {
       verticalAlign: 'bottom',
-      borderBottomWidth: '2px'
+      borderBottomWidth: '2px',
     },
     td: {
       verticalAlign: 'top',
-      borderBottomWidth: '1px'
-    }
+      borderBottomWidth: '1px',
+    },
   },
-  util
+  util,
 }
 
 theme.cards.translucent = {
@@ -473,12 +474,12 @@ theme.cards.translucent = {
   [theme.util.supportsBackdrop]: {
     backgroundColor: 'rgba(255, 255, 255, 0.75)',
     backdropFilter: 'saturate(180%) blur(20px)',
-    WebkitBackdropFilter: 'saturate(180%) blur(20px)'
+    WebkitBackdropFilter: 'saturate(180%) blur(20px)',
   },
   [theme.util.reduceTransparency]: {
     backdropFilter: 'none',
-    WebkitBackdropFilter: 'none'
-  }
+    WebkitBackdropFilter: 'none',
+  },
 }
 theme.cards.translucentDark = {
   // variant: 'cards.primary',
@@ -488,12 +489,12 @@ theme.cards.translucentDark = {
   [theme.util.supportsBackdrop]: {
     backgroundColor: 'rgba(0, 0, 0, 0.625)',
     backdropFilter: 'saturate(180%) blur(16px)',
-    WebkitBackdropFilter: 'saturate(180%) blur(16px)'
+    WebkitBackdropFilter: 'saturate(180%) blur(16px)',
   },
   [theme.util.reduceTransparency]: {
     backdropFilter: 'none',
-    WebkitBackdropFilter: 'none'
-  }
+    WebkitBackdropFilter: 'none',
+  },
 }
 
 export default theme

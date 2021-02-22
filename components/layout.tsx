@@ -3,15 +3,16 @@ import {
   Box,
   Container,
   IconButton,
+  IconButtonProps,
   NavLink,
   ThemeUIStyleObject,
-  useColorMode
+  useColorMode,
 } from 'theme-ui'
 import Link from 'next/link'
 import Icon from 'supercons'
 import Avatar from './avatar'
 
-export const ColorButton = ({ sx, ...props }: {sx?:ThemeUIStyleObject}) => {
+export const ColorButton = ({ sx, ...props }: IconButtonProps) => {
   const [mode, setMode] = useColorMode()
   return (
     <IconButton
@@ -22,9 +23,9 @@ export const ColorButton = ({ sx, ...props }: {sx?:ThemeUIStyleObject}) => {
         transition: 'box-shadow .125s ease-in-out',
         ':hover,:focus': {
           boxShadow: '0 0 0 2px',
-          outline: 'none'
+          outline: 'none',
         },
-        ...sx
+        ...sx,
       }}
       onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
       title="Reverse color scheme"
@@ -52,7 +53,7 @@ export const Header = () => (
       alignItems: 'center',
       px: 3,
       py: [3, 4],
-      'a + a': { mx: [3, 4] }
+      'a + a': { mx: [3, 4] },
     }}
   >
     <NavLink href="https://notebook.lachlanjc.com" target="_blank">
@@ -79,7 +80,7 @@ export const Footer = () => (
       alignItems: 'center',
       justifyContent: 'center',
       py: [3, 4, 5],
-      a: { color: 'primary', mx: 2 }
+      a: { color: 'primary', mx: 2 },
     }}
   >
     <Avatar size={48} sx={{ height: 48, mr: 3 }} />
@@ -112,7 +113,7 @@ const colors = {
   yellow: '#f1c40f',
   green: '#33d6a6',
   cyan: '#5bc0de',
-  blue: '#338eda'
+  blue: '#338eda',
 }
 
 export const Rainbow = () => (
@@ -121,12 +122,12 @@ export const Rainbow = () => (
       width: '100%',
       height: '4rem',
       display: 'block',
-      backgroundImage: `linear-gradient(${colors.red} 0%, ${colors.red} 16.6666%, ${colors.orange} 16.6666%, ${colors.orange} 33.333%, ${colors.yellow} 33.333%, ${colors.yellow} 50%, ${colors.green} 50%, ${colors.green} 66.6666%, ${colors.blue} 66.6666%, ${colors.blue} 83.3333%, #8067C3 83.3333%, #8067C3 100%)`
+      backgroundImage: `linear-gradient(${colors.red} 0%, ${colors.red} 16.6666%, ${colors.orange} 16.6666%, ${colors.orange} 33.333%, ${colors.yellow} 33.333%, ${colors.yellow} 50%, ${colors.green} 50%, ${colors.green} 66.6666%, ${colors.blue} 66.6666%, ${colors.blue} 83.3333%, #8067C3 83.3333%, #8067C3 100%)`,
     }}
   />
 )
 
-const Layout = ({children}:{children?: any}) => (
+const Layout = ({ children }: { children?: any }) => (
   <>
     <Header />
     <Container as={BaseStyles} variant="copy">

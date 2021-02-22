@@ -4,7 +4,7 @@ import theme from '../lib/theme'
 
 const slideUp = keyframes({
   from: { transform: 'translateY(100%)', opacity: 0 },
-  to: { transform: 'translateY(0)', opacity: 1 }
+  to: { transform: 'translateY(0)', opacity: 1 },
 })
 
 type Props = {
@@ -28,8 +28,8 @@ const SlideUp = ({
         animationFillMode: 'backwards',
         animationDuration: duration + 'ms',
         animationDelay: delay + 'ms',
-        willChange: 'transform, opacity'
-      }
+        willChange: 'transform, opacity',
+      },
     }}
   />
 )
