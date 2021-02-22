@@ -4,13 +4,14 @@ import {
   Container,
   IconButton,
   NavLink,
+  ThemeUIStyleObject,
   useColorMode
 } from 'theme-ui'
 import Link from 'next/link'
-import Icon from './icon'
+import Icon from 'supercons'
 import Avatar from './avatar'
 
-export const ColorButton = ({ sx, ...props }) => {
+export const ColorButton = ({ sx, ...props }: {sx?:ThemeUIStyleObject}) => {
   const [mode, setMode] = useColorMode()
   return (
     <IconButton
@@ -62,7 +63,7 @@ export const Header = () => (
     </Link>
     <Box sx={{ mx: 'auto' }} />
     <ColorButton
-      onClick={e => {
+      onClick={() => {
         const next = mode === 'dark' ? 'light' : 'dark'
         setMode(next)
       }}
@@ -125,11 +126,11 @@ export const Rainbow = () => (
   />
 )
 
-const Layout = props => (
+const Layout = ({children}:{children?: any}) => (
   <>
     <Header />
     <Container as={BaseStyles} variant="copy">
-      {props.children}
+      {children}
     </Container>
     <Footer />
     <Rainbow />
