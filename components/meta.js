@@ -4,18 +4,17 @@ const makeTitle = (title, name) =>
   title === name ? title : `${title} – ${name}`
 
 const Meta = ({
-  name = 'Lachlan Campbell', // site name
-  title = '@lachlanjc', // page title
-  description = 'Web designer-developer based in New York City. NYU ’23, Interactive Media Arts. 18. they/them',
+  name = 'Gabriella Miesner', // site name
+  title = '', // page title
+  description = 'A developer at the intersection of tech and social change. Mizzou ’24, Information Technology. 18. she/they',
   image = 'https://cdn.glitch.com/4d99d0f7-c364-44a5-b1b9-2c3c3f5cb333%2Fcard.png?v=1582524337857',
   color = '#ff2467'
 }) => (
   <Head>
     <meta key="og_type" property="og:type" content="website" />
     <meta key="og_site" property="og:site_name" content={name} />
-    <meta key="og_url" property="og:url" content="https://lachlanjc.com/" />
-    <meta key="tw_site" name="twitter:site" content="@lachlanjc" />
-
+    <meta key="og_url" property="og:url" content="https://gabriellamiesner.me/" />
+    
     <title>{makeTitle(title, name)}</title>
     <meta key="og_title" property="og:title" content={makeTitle(title, name)} />
     <meta
