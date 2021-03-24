@@ -66,16 +66,16 @@ const Banner = ({ children }) => (
             bg: 'primary',
             transform: 'rotate(-4deg)',
             fontSize: [3, 4],
-            px: 0,
+            px: 3,
             transition: 'all .125s ease-in-out',
             textShadow: 'none',
             ':hover': {
-              bg: '#328DB9',
+              bg: '#ffffff00',
               transform: 'scale(1.25) rotate(-356deg)'
             }
           }}
         >
-        🧑🏻‍💻
+        👩‍💻
         </Badge>
         <Text
           as="p"
