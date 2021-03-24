@@ -75,7 +75,7 @@ const Banner = ({ children }) => (
             transition: 'all .125s ease-in-out',
             textShadow: 'none',
             ':hover': {
-              bg: 'lilac',
+              bg: '#328DB9',
               transform: 'scale(1.25) rotate(-356deg)'
             }
           }}
@@ -94,8 +94,8 @@ const Banner = ({ children }) => (
             a: { fontWeight: 'bold' }
           }}
         >
-          I’m a web designer-developer & hacktivist.
-          <br />NYU&nbsp;’24, studying Interactive Media&nbsp;Arts.
+          A developer at the intersection of tech and social good.
+          <br />Mizzou&nbsp;’24 (??), studying Information Technology.
         </Text>
         {children}
       </Slide>
