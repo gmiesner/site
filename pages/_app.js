@@ -11,7 +11,7 @@ export default class extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-      <PlausibleProvider domain="lachlanjc.com">
+      <PlausibleProvider domain="gabriellamiesner.me">
         <ThemeProvider theme={theme}>
           <Meta />
           <Component {...pageProps} />

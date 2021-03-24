@@ -82,25 +82,14 @@ export const Footer = () => (
     }}
   >
     <Avatar size={48} sx={{ height: 48, mr: 3 }} />
-    <NavLink
-      href="https://twitter.com/lachlanjc"
-      title="Twitter"
-      target="_blank"
-    >
-      <Icon glyph="twitter" size={36} />
-    </NavLink>
     <NavLink href="https://github.com/lachlanjc" title="GitHub" target="_blank">
       <Icon glyph="github" size={36} />
     </NavLink>
-    <NavLink
-      href="https://instagram.com/lachlan.jc"
-      title="Instagram"
-      target="_blank"
-    >
-      <Icon glyph="instagram" size={36} />
-    </NavLink>
-    <NavLink href="mailto:lachlanjc@hey.com" title="Email">
+    <NavLink href="mailto:gtmr7z@umsystem.edu" title="Email">
       <Icon glyph="email" size={36} />
+    </NavLink>
+     <NavLink href="https://www.linkedin.com/in/gabriella-miesner-56b4ba15b/" title="Linkedin">
+      <Icon glyph="linkedin" size={36} />
     </NavLink>
   </Container>
 )
