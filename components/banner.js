@@ -61,9 +61,9 @@ const Banner = ({ children }) => (
             mb: 3
           }}
         >
-          Hey, I’m
+          Hi, I'm
           <br />
-          Lachlan Campbell.
+          Gabriella Miesner.
         </Heading>
         <Badge
           variant="pill"
@@ -80,7 +80,7 @@ const Banner = ({ children }) => (
             }
           }}
         >
-          they/them
+          she/they
         </Badge>
         <Text
           as="p"
