@@ -75,6 +75,7 @@ const Banner = ({ children }) => (
             }
           }}
         >
+        🧑🏻‍💻
         </Badge>
         <Text
           as="p"
