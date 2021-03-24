@@ -65,7 +65,7 @@ const Banner = ({ children }) => (
           sx={{
             bg: '#ffffff00',
             transform: 'rotate(-4deg)',
-            px: 10,
+            fontSize: [10, 9],
             transition: 'all .125s ease-in-out',
             textShadow: 'none',
             ':hover': {
