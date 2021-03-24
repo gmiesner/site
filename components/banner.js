@@ -80,8 +80,8 @@ const Banner = ({ children }) => (
           as="p"
           variant="headline"
           sx={{
-            mt: [3, 4, 5],
-            mb: [2, 3],
+            mt: [.5],
+            mb: [.5],
             lineHeight: 'body',
             fontSize: [3, 4],
             fontWeight: 'normal',
