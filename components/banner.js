@@ -16,12 +16,7 @@ const Banner = ({ children }) => (
       mb: 0
     }}
   >
-    <BGImg
-      src=""
-      width={1520}
-      height={1016}
-      alt="Close-up of Lachlan's face with lipstick on & satin red gloved hands covering the eyes"
-    />
+   
     <Container
       variant="copyPlus"
       sx={{
