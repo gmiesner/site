@@ -60,23 +60,23 @@ const Banner = ({ children }) => (
           <br />
           Gabriella Miesner.
         </Heading>
-        <Badge
-          variant="pill"
-          sx={{
-            bg: 'primary',
-            transform: 'rotate(-4deg)',
-            fontSize: [3, 4],
-            px: 3,
-            transition: 'all .125s ease-in-out',
-            textShadow: 'none',
-            ':hover': {
-              bg: '#328DB9',
-              transform: 'scale(1.25) rotate(-356deg)'
-            }
-          }}
-        >
-          she/they
-        </Badge>
+        // <Badge
+        //   variant="pill"
+        //   sx={{
+        //     bg: 'primary',
+        //     transform: 'rotate(-4deg)',
+        //     fontSize: [3, 4],
+        //     px: 3,
+        //     transition: 'all .125s ease-in-out',
+        //     textShadow: 'none',
+        //     ':hover': {
+        //       bg: '#328DB9',
+        //       transform: 'scale(1.25) rotate(-356deg)'
+        //     }
+        //   }}
+        // >
+        //   she/they
+        // </Badge>
         <Text
           as="p"
           variant="headline"
