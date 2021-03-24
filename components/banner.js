@@ -17,7 +17,7 @@ const Banner = ({ children }) => (
     }}
   >
     <BGImg
-      src="https://cdn.glitch.com/4d99d0f7-c364-44a5-b1b9-2c3c3f5cb333%2F_DSC1474.jpeg?v=1582521162110"
+      src=""
       width={1520}
       height={1016}
       alt="Close-up of Lachlan's face with lipstick on & satin red gloved hands covering the eyes"
@@ -95,7 +95,7 @@ const Banner = ({ children }) => (
           }}
         >
           A developer at the intersection of tech and social good.
-          <br />Mizzou&nbsp;’24 (??), studying Information Technology.
+          <br />Mizzou&nbsp;’24, studying Information Technology.
         </Text>
         {children}
       </Slide>
