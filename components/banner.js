@@ -52,7 +52,7 @@ const Banner = ({ children }) => (
           sx={{
             fontFamily: 'display',
             fontSize: [6, 7],
-            mt: 5,
+            mt: 6,
             mb: 3
           }}
         >
@@ -81,7 +81,7 @@ const Banner = ({ children }) => (
           variant="headline"
           sx={{
             mt: [3, 4, 5],
-            mb: [4, 5],
+            mb: [2, 3],
             lineHeight: 'body',
             fontSize: [3, 4],
             fontWeight: 'normal',
