@@ -28,7 +28,7 @@ const Banner = ({ children }) => (
         px: 3,
         textAlign: 'center',
         textShadow:
-          '#B9328D',
+          '0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.25)',
         ul: {
           listStyle: 'none',
           display: 'flex',
@@ -66,9 +66,9 @@ const Banner = ({ children }) => (
           Gabriella Miesner.
         </Heading>
         <Badge
-          variant="pill"
+          variant="pill", 
           sx={{
-            bg: 'primary',
+            bg: '#B9328D',
             transform: 'rotate(-4deg)',
             fontSize: [3, 4],
             px: 3,
