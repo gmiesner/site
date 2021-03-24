@@ -53,7 +53,7 @@ const Banner = ({ children }) => (
             fontFamily: 'display',
             fontSize: [6, 7],
             mt: 6,
-            mb: 3
+            mb: .5
           }}
         >
           Hi, I'm
