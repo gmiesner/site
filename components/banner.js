@@ -68,7 +68,7 @@ const Banner = ({ children }) => (
         <Badge
           variant="pill"
           sx={{
-            bg: '#B9328D',
+            bg: 'primary',
             transform: 'rotate(-4deg)',
             fontSize: [3, 4],
             px: 3,

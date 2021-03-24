@@ -11,7 +11,7 @@ export const palette = {
   smoke: '#e0e6ed',
   snow: '#f9fafc',
   white: '#ffffff',
-  fuschia: '#ff2467',
+  fuschia: '#B9328D',
   pink: '#ff707a',
   lilac: '#849de1',
   yellow: '#ffaf26',
