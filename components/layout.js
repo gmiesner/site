@@ -54,8 +54,8 @@ export const Header = () => (
       'a + a': { mx: [3, 4] }
     }}
   >
-    <NavLink href="https://notebook.lachlanjc.com" target="_blank">
-      Notebook
+    <NavLink href="/blog" target="_blank">
+      Blog
     </NavLink>
     <Link href="/resume" passHref>
       <NavLink>Résumé</NavLink>
@@ -82,14 +82,11 @@ export const Footer = () => (
     }}
   >
     <Avatar size={48} sx={{ height: 48, mr: 3 }} />
-    <NavLink href="https://github.com/lachlanjc" title="GitHub" target="_blank">
+    <NavLink href="https://github.com/gmiesner" title="GitHub" target="_blank">
       <Icon glyph="github" size={36} />
     </NavLink>
     <NavLink href="mailto:gtmr7z@umsystem.edu" title="Email">
       <Icon glyph="email" size={36} />
-    </NavLink>
-     <NavLink href="https://www.linkedin.com/in/gabriella-miesner-56b4ba15b/" title="Linkedin">
-      <Icon glyph="linkedin" size={36} />
     </NavLink>
   </Container>
 )
