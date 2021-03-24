@@ -66,7 +66,7 @@ const Banner = ({ children }) => (
           Gabriella Miesner.
         </Heading>
         <Badge
-          variant="pill", 
+          variant="pill"
           sx={{
             bg: '#B9328D',
             transform: 'rotate(-4deg)',
