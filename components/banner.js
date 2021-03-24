@@ -28,7 +28,7 @@ const Banner = ({ children }) => (
         px: 3,
         textAlign: 'center',
         textShadow:
-          '0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.25)',
+          '#B9328D',
         ul: {
           listStyle: 'none',
           display: 'flex',

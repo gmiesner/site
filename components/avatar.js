@@ -3,8 +3,8 @@ import { Avatar } from 'theme-ui'
 const Component = props => (
   <Avatar
     {...props}
-    src="https://github.com/lachlanjc.png"
-    alt="Lachlan's avatar"
+    src="https://github.com/gmiesner.png"
+    alt="Gabriella's avatar"
     loading="lazy"
   />
 )
