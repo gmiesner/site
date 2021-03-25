@@ -1,0 +1,52 @@
+<html>
+<head>
+ <title>Gabriella Miesner </title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap" rel="stylesheet"> 
+<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+<script src="script.js"></script>
+
+</head>
+ <a href = "index.html"><img src="img/me.png" alt="" class = "avatar-pages"></a>
+<nav  class = "menu">
+  <a href="about.html" >about</a>
+  <a href="portfolio.html">portfolio</a>
+  <a href="timeline.html">timeline</a>
+  <br>
+</nav>
+  <a href = "index.html"><img src="img/rainbow.png" alt="" class = "rainbow-pages"></a>
+<body onLoad = "filterSelection('all')">
+  <br>
+<div id="myBtnContainer" class = "center">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <button class="btn" onclick="filterSelection('data_sci')"> Data Science</button>
+  <button class="btn" onclick="filterSelection('python')"> Python</button>
+  <button class="btn" onclick="filterSelection('web_dev')"> Web Development</button>
+  <button class="btn" onclick="filterSelection('web_scrap')"> Web Scraping</button>
+</div>
+
+<div class="container center">
+  <div class="filterDiv data_sci python neurosight" onclick = "displayNeurosight();"  ><img src = "img/neurosight.png"></div>
+  <p id = "neurosight" class = "port_text"><a href = "https://devpost.com/software/neurosight" target = "_blank" class = "links" >Neurosight</a> is a project built over the course of <a href = "https://techtogether.io/newyork" target = "_blank" class = "links">Tech Together New York</a>. The web application aims to improve the online learning experience. I contributed auto updating graphs for the website to mimic what assignment analytics would look like. I used python and matplotlib create the data visualizations, and created a python script to generate dummy student score data as we did not have any on hand. Neurosight won best survival hack at TechTogether New York.</p>
+  <!-- <div class="filterDiv web_dev " ><img src = "img/qwr.png" onclick = "displayCrystalQwr();"></div>
+  <p id = "qwr" class = "port_text" >gay</p> -->
+  <div class="filterDiv web_dev" onclick = "displayRenew();"><img src = "img/renew.png"></div>
+  <p id = "renew" class = "port_text"><a href = "https://kwk-final-project--gmiesner.repl.co/" target = "_blank" class = "links" >Renew</a> was created as a final project for the 2020 Web Development <a href = "https://www.kodewithklossy.com/" target = "_blank" class = "links">Kode with Klossy</a> Summer Program. The application aims to allow the user to interact with the <a href = "https://www.archcitydefenders.org/wp-content/uploads/2019/09/STL-Environmental-Racism-in-STL-2019.pdf" target = "_blank" class = "links">WashU Climate Report </a> on Environmental Racism in Saint Louis in a more interactive and accessible way. THe website includes the information of the report, as well as information on representatives to contact, further reading, and local organizations fighting for climate justice.  </p> 
+  <div class="filterDiv web_dev" onclick = "displayClimateClock();"><img src = "img/climate_clock.png"></div>
+   <p id = "climate_clock" class = "port_text"><a href = "https://ttboston2020.gmiesner.repl.co/" target = "_blank" class = "links">Climate Clock</a> was created over the course of <a href = "https://techtogether.io/boston" target = "_blank" class = "links">TechTogether Boston</a>. The web application aims to educate the user about the history of the environmental justice movement in an interactive timeline format. When the user hovers over an item, the item expands to include more information about the event in environmental justice history.</p>
+   <div class="filterDiv web_scrap" onclick = "displayMstier();"><img src = "img/mstier.png"></div>
+   <p id = "mstier" class = "port_text"><a href = "https://mstier.vercel.app/" target = "_blank" class = "links">MSTier</a> was inspired by Kat's <a href = "https://mitier.vercel.app/" target = "_blank" class = "links">website for MIT</a>. The website serves as a tier ranking application for the Missouri University of Science and Technology to tier rank their classes - both past and present. As I know next to no React, I learned a little bit to refactor the project for Missouri S & T. I learned how to use puppeteer to web scrape all the classes off of the Missouri S & T website.</p>
+  <div class="filterDiv web_scrap" onclick = "displayMiztier();"><img src = "img/miztier.png"></div>
+   <p id = "miztier" class = "port_text"><a href = "https://miztier.vercel.app/" target = "_blank" class = "links">MizTier</a> was inspired by Kat's <a href = "https://mitier.vercel.app/" target = "_blank" class = "links">website for MIT</a>. The website serves as a tier ranking application for Mizzou students to tier rank their classes - both past and present. I scraped the data from Mizzou's course catalog after I made the MST one and then made slight adjustments for branding and such. </p>
+</div>
+
+  
+  <br>
+  
+  <br>
+    <br>
+  <br>
+</body>
+</body>
+</html>

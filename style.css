@@ -1,0 +1,254 @@
+body{
+  background: #9ED2E8; 
+  font-family: "Press Start 2P";
+}
+.center{
+  text-align:center;
+}
+nav .rainbow{
+  width: 25rem; 
+}
+
+nav .avatar{ 
+  margin-left: .9%; 
+  margin-top: -2%;
+  height: 10rem; }
+
+.cloud1{
+  margin-left: 30%;
+  width: 15rem;
+}
+.cloud2{
+  margin-left: 50%;
+  margin-top: -2rem; 
+  width: 15rem;
+}
+
+nav h1{
+  text-align:center;
+  font-size: 2rem; 
+  margin-top: -.25rem; }
+
+nav a{
+  text-decoration: none;
+  color: black; 
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+
+nav .navbar{
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+ nav .rainbow{
+  margin-left: 1rem; 
+}
+
+nav .avatar{ 
+  margin-left: 5rem; 
+  margin-top: -2.25rem; }
+
+nav .cloud1{
+  margin-left: 5rem;
+}
+nav .cloud2{
+  margin-left: 10rem;
+}
+
+}
+
+.avatar-pages{
+  margin-left: 5.4%;
+  margin-top: 0rem;
+  height: 3.2rem;
+}
+
+.rainbow-pages{
+  margin-top: .15%; 
+  margin-left: 5%;
+  height:2rem; 
+}
+
+.menu{
+  margin-left: 7rem; 
+  margin-top: -2%; 
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row; 
+}
+#about-text{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight:300;
+   margin-left: 5rem; 
+   font-size: 1.5rem;
+   margin-right: 5rem; 
+}
+
+
+.social-icon{
+  height: 3rem; 
+}
+
+.buffer{
+  margin-left:-2rem;
+}
+
+.last{
+  margin-right: 3rem;
+}
+
+  .social-icons{
+    text-align:center; 
+  }
+
+
+.links{
+  text-decoration:none; 
+  color: black; 
+  font-weight:500;
+}
+
+.co-icons{
+  margin-right: 5%;
+}
+
+
+
+
+#web_dev{
+  display: inline;
+}
+#python{
+  display: inline;
+}
+#data_sci{
+  display: inline;
+}
+.filterDiv img{
+  width: 35rem;
+  margin-bottom: 1rem; 
+}
+
+
+.show {
+  display: inline;
+}
+
+.filterDiv{
+  margin-right: 4rem; 
+}
+
+.fl{
+  display: flex;
+  flex-direction: row; 
+}
+@media only screen and (max-width: 1000px) {
+ .fl{
+    display: flex;
+  flex-direction: column;
+ }
+
+ .filterDiv img{
+   width:50rem; 
+ }
+}
+
+.fl img{
+  margin-left: 4rem; 
+}
+
+
+.fl p{
+  margin-top: -.2rem; 
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #E7F4F9;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btn:hover {
+  background-color: #ECE7F9;
+}
+
+
+
+
+.tooltip .tooltiptext {
+  display: none;
+}
+@media only screen and (min-width: 1000px){
+  .tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-family: 'Noto Sans KR', sans-serif;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+}
+
+.port_text{
+  font-family: 'Noto Sans KR', sans-serif;font-weight:300;text-align:center;background: #E7F4F9; margin-left: 5rem; margin-right: 5rem; padding: 2rem; font-size:1.25rem; 
+}
+
+.date{
+  text-align:center;background: #ECE7F9; margin-left: 5rem; margin-right: 5rem; padding: 2rem; 
+}
+
+.header2{
+  text-align:center;background: #E7F4F9; margin-left: 5rem; margin-right: 5rem; padding: 1.5rem; 
+}
+
+.timeline_list{
+  font-family: 'Noto Sans KR', sans-serif;font-weight:300;font-size: 1.5rem; margin-left: 5rem; margin-right: 5rem;
+}
+
+.about-title{
+  margin-top: -.05rem; 
+}
+
+.dates{
+  color: #0B2586; 
+}
+
+.none{
+  list-style-type: none;
+}
+
+.timeline_list{
+  font-weight: 500; 
+}
+
+.timeline_list ul{
+  color: black; 
+  font-weight: 300; 
+}
+
+.pu{
+  color: #433676; 
+}
+
+.timeline_list .links{
+  text-decoration: underline; 
+}
